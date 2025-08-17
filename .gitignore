@@ -1,0 +1,33 @@
+# Initial .gitignore
+
+# build artifacts directory
+build
+TrainingExtensions/tensorflow/test/python/data/
+TrainingExtensions/torch/test/python/data/
+NightlyTests/torch/data/
+NightlyTests/tensorflow/data/
+NightlyTests/data/
+
+# Ignore the AIMET support directories
+CD
+Benchmarks
+ThirdParty/*
+!ThirdParty/CMakeLists.txt
+
+# ignore IDE files
+.idea
+.vscode
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+.pytest_cache/
+*.pyc
+
+# Build and test results directory
+buildntest_results
+unit_test_results
+
+# Other generated files
+*.swp
+packaging/setup_cfg.py
+package_info.py
